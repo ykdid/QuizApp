@@ -1,0 +1,291 @@
+.btn-start,
+.quiz-box,
+.score-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quiz-box.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.quiz-box {
+  width: 550px;
+
+  transform: translate(-50%, -50%) scale(0.7);
+  transition: all 0.3s ease;
+
+  opacity: 0;
+  pointer-events: none;
+}
+.body.
+.quiz-box header .title {
+  font-size: 20px;
+}
+
+.quiz-box .question_text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.quiz-box .option_list {
+  padding: 18px 0px;
+}
+
+.quiz-box .option_list .option {
+  border: 1px solid #151d3b;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz-box .option_list .option:hover {
+  color: #112b2c;
+  background-color: #ffd33d;
+}
+
+.quiz-box .option_list .option.correct {
+  color: #155724;
+  background-color: #d4edda;
+}
+body.dark-mode .quiz-box .option_list .option.correct {
+  color: #155724;
+  background-color: #d3d3d3;
+}
+
+.quiz-box .option_list .option.incorrect {
+  color: #4c1218;
+  background-color: #d0a28e;
+}
+body.dark-mode .quiz-box .option_list .option.incorrect {
+  color: #000;
+  background-color: #666666;
+}
+
+.card-footer .btn {
+  display: block;
+  margin-left: auto;
+}
+
+.quiz-box .option_list .option.disabled { 
+  pointer-events: none;
+}
+
+.quiz-box #next {
+  opacity: 0;
+  pointer-events: none;
+
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+}
+
+.quiz-box #next.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.score-box.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.score-box {
+  width: 550px;
+  height: 352px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border: 1px solid black;
+  background-color: #f8f8f8;
+
+  transform: translate(-50%, -50%) scale(0.7);
+  transition: all 0.3s ease;
+
+  opacity: 0;
+  pointer-events: none;
+}
+
+.score-box .icon {
+  font-size: 120px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  color: #ffd700;
+}
+
+.score-box .score-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.score-box .buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons button {
+  margin: 0 30px;
+  
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  align-items: center;
+}
+
+.nameofapp {
+  order: 2;
+  font-family: "Roboto", sans-serif;
+  color: #2196f3;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  left: 227px;
+}
+
+.timer {
+  order: 1;
+  color: #ffc107;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+}
+
+.scoreinformations {
+  order: 3;
+  color: #ffc107;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.score-box .score-text #correct-answer {
+  color: #4caf50;
+}
+
+.score-box .score-text #total-questions {
+  color: #4caf50;
+}
+
+body.dark-mode .score-box .score-text #correct-answer,
+body.dark-mode .score-box .score-text #total-questions {
+  color: #dc143c;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card .darkCard {
+  box-shadow: 0 4px 8px white;
+}
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.question-index {
+  order: 1;
+}
+.darkMode {
+  order: 2;
+  position: absolute;
+  left: 259px;
+}
+.nextButton {
+  order: 3;
+}
+
+header .time_line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: #f0a500;
+}
+
+.quiz-box header {
+  position: relative;
+}
+
+body.dark-mode .card {
+  box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.5);
+  
+}
+
+body.dark-mode .nameofapp,
+body.dark-mode .timer,
+body.dark-mode .scoreinformations {
+  color: black;
+}
+
+body.dark-mode .time_line {
+  background-color: #dc143c;
+}
+
+body.dark-mode .option_list .option:hover span {
+  color: #fff;
+}
+
+body.dark-mode .option_list .option:hover {
+  background-color: #000;
+}
+
+body.dark-mode #next {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+body.dark-mode .question-index span {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.quiz-box #next {
+  transition: none !important;
+}
+
+body.dark-mode .score-box .icon {
+  color: #000;
+}
+
+body.dark-mode .buttons button {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+body.dark-mode .buttons button:hover{
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
